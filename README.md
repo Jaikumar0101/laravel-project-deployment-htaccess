@@ -15,8 +15,8 @@ This package gives you a single Artisan command to drop both files into the righ
 
 | Dependency | Version |
 |---|---|
-| PHP | `^8.0` |
-| Laravel | `9.x`, `10.x`, `11.x` |
+| PHP | `^8.1` |
+| Laravel | `9.x`, `10.x`, `11.x`, `12.x` |
 | Web Server | Apache with `mod_rewrite` enabled |
 
 ---
