@@ -1,0 +1,50 @@
+{
+    "name": "jaikumar0101/laravel-project-deployment-htaccess",
+    "description": "A Laravel package that automatically places the correct .htaccess files in the Laravel root and public directories for shared hosting deployment.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "htaccess",
+        ".htaccess",
+        "deployment",
+        "shared-hosting",
+        "apache"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaikumar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaikumar0101\\LaravelHtaccess\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jaikumar0101\\LaravelHtaccess\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jaikumar0101\\LaravelHtaccess\\HtaccessServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
